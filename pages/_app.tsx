@@ -7,7 +7,7 @@ import superjson from "superjson";
 const MyApp: AppType = ({ Component, pageProps }) => {
   return (
     <div>
-      <Component {...pageProps} />;
+      <Component {...pageProps} />
     </div>
   );
 };

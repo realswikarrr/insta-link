@@ -7,7 +7,18 @@ import myGIf from "../public/images/dog.gif";
 const Home: NextPage = () => {
   const { data, isLoading } = trpc.useQuery(["datas.getAll"]);
 
-  if (isLoading || !data) return <div>Loading...</div>;
+  if (isLoading || !data)
+    return (
+      <div className="flex justify-center">
+        <Image
+          src={myGIf}
+          alt="my gif"
+          height={200}
+          width={200}
+          className="mx-auto"
+        />
+      </div>
+    );
 
   return (
     <div className="mx-auto p-40 h-screen max-w-screen-lg">
