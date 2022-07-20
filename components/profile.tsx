@@ -17,7 +17,7 @@ const Profile: React.FC<Props> = ({
   linkedin,
 }) => {
   return (
-    <div className="bg-my-bg h-screen bg-screen">
+    <div className="bg-my-bg h-screen bg-screen bg-no-repeat">
       <Layout>
         <div className="flex flex-col items-center min-w-full">
           <div className="flex flex-wrap justify-center">

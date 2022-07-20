@@ -1,6 +1,11 @@
 import Head from "next/head";
+import React, { ReactNode } from "react";
 
-const Main = ({ children }) => {
+type Props = {
+  children: ReactNode;
+};
+
+const Main = ({ children }: Props) => {
   return (
     <>
       <Head>
