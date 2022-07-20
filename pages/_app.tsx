@@ -5,7 +5,11 @@ import { AppRouter } from "../backend/router";
 import superjson from "superjson";
 
 const MyApp: AppType = ({ Component, pageProps }) => {
-  return <Component {...pageProps} />;
+  return (
+    <div>
+      <Component {...pageProps} />;
+    </div>
+  );
 };
 
 export default withTRPC<AppRouter>({
