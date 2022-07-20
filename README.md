@@ -1,34 +1,37 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Insta Link WebApp With t3 Stack
 
-## Getting Started
+![image](https://user-images.githubusercontent.com/80502023/180048857-effdc0e8-c2a9-4032-aeae-83986e8aee8b.png)
 
-First, run the development server:
+![image](https://user-images.githubusercontent.com/80502023/180048933-f67438fb-4ddc-4a89-a119-e8008820dc49.png)
 
-```bash
-npm run dev
-# or
-yarn dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# What is this app all about ?
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+So, it is basically a web app where all your social links are provided and can be easily accesible by others. The links , profile picture , and name are dynamically generated and fetched throgh mysql database using tRPC , planetscale and prisma. We can also dynamically change the links through this webapp using the same stack.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+# Why did i build this ?
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+I wanted to learn about the t3 stack and thats when i thought of this idea. I built this as a fun project and to learn about full stack development using t3 stack.
 
-## Learn More
+# Tech Stack Used ?
 
-To learn more about Next.js, take a look at the following resources:
+`` Next JS ``
+`` tRPC ``
+`` Planet Scale ``
+`` Prisma ``
+`` TypeScript ``
+`` TailWind CSS ``
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# Outcome 
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+I think t3 stack is easy to stack among other stack i developed applications with such as MERN. Specially tRPC makes our life so much easier for routing api's and all. All of our backend and frontend can be done within Next JS which is really good and i think i will be using this stack to build more application in future.
 
-## Deploy on Vercel
+# Usage 
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+`` clone this repo ``
+` npm install `
+` npm run dev `
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+# Further Improvement 
+
+I think i will be adding an authentication system to this web application in future because as of now the admin panel is accesable by everyone and data can be changed by anyone.
