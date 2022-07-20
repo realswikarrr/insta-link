@@ -3,12 +3,13 @@ import { AppType } from "next/dist/shared/lib/utils";
 import "../styles/globals.css";
 import { AppRouter } from "../backend/router";
 import superjson from "superjson";
+import Layout from "../components/layouts/main";
 
 const MyApp: AppType = ({ Component, pageProps }) => {
   return (
-    <div>
+    <Layout>
       <Component {...pageProps} />
-    </div>
+    </Layout>
   );
 };
 
