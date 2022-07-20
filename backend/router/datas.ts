@@ -15,6 +15,7 @@ export const dataRouter = trpc
       portfolio: z.string(),
       github: z.string(),
       linkedin: z.string(),
+      image: z.string(),
     }),
 
     async resolve({ input }) {
@@ -24,9 +25,10 @@ export const dataRouter = trpc
           portfolio: input.portfolio,
           github: input.github,
           linkedin: input.linkedin,
+          image: input.image,
         },
         where: {
-          id: "cl5t8u9ah00156wv24aqm7k6c",
+          id: "cl5ts8d2j0007mov2h7app7pc",
         },
       });
     },
