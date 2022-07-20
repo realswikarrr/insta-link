@@ -36,6 +36,7 @@ const Profile: React.FC<Props> = ({
           <a
             href={portfolio}
             target="_blank"
+            rel="noopener noreferrer"
             className="text-black p-5 flex flex-row justify-center items-center "
           >
             <IoHomeSharp className="mr-2" /> <h1>Portfolio</h1>{" "}
@@ -45,6 +46,7 @@ const Profile: React.FC<Props> = ({
           <a
             href={github}
             target="_blank"
+            rel="noopener noreferrer"
             className="text-black p-5 flex flex-row justify-center items-center "
           >
             <IoLogoGithub className="mr-2" /> <h1>GitHub</h1>{" "}
@@ -54,6 +56,7 @@ const Profile: React.FC<Props> = ({
           <a
             href={linkedin}
             target="_blank"
+            rel="noopener noreferrer"
             className="text-black p-5 flex flex-row justify-center items-center "
           >
             <IoLogoLinkedin className="mr-2" /> <h1>Linkedin</h1>{" "}
