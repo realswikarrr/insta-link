@@ -1,8 +1,8 @@
 import type { NextPage } from "next";
-import DataCreator from "../components/details";
 import { trpc } from "../utils/trpc";
 import Image from "next/image";
 import myGIf from "../public/images/dog.gif";
+import Profile from "../components/profile";
 
 const Home: NextPage = () => {
   const { data, isLoading } = trpc.useQuery(["datas.getAll"]);
@@ -20,20 +20,16 @@ const Home: NextPage = () => {
       </div>
     );
 
+  console.log(data[0]?.image);
+
   return (
-    <div className="mx-auto p-40 h-screen max-w-screen-lg">
-      <h1 className="mx-auto text-center text-3xl ">Enter Your Details</h1>
-      <div className="flex justify-center">
-        <Image
-          src={myGIf}
-          alt="my gif"
-          height={200}
-          width={200}
-          className="mx-auto"
-        />
-      </div>
-      <DataCreator />
-    </div>
+    <Profile
+      name={data[0]?.name}
+      image={data[0]?.image}
+      portfolio={data[0]?.portfolio}
+      github={data[0]?.github}
+      linkedin={data[0]?.linkedin}
+    />
   );
 };
 
